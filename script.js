@@ -30,7 +30,7 @@ function check(input) {
 }
 
 function color(text) {
-    return text.split(" ")[0] === "Valid" ? "green" : "red";
+    return text.includes("Valid") ? "green" : "red";
 }
 
 checkBtn.addEventListener("click", inputCheck);
